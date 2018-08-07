@@ -1,0 +1,78 @@
+
+-- 
+-- Table structure for table `contato`
+-- 
+
+CREATE TABLE `contato` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `nome` varchar(300) DEFAULT NULL,
+  `empresa` varchar(300) DEFAULT NULL,
+  `telefone_pessoal` varchar(30) DEFAULT NULL,
+  `telefone_comercial` varchar(30) DEFAULT NULL,
+  `emails` text,
+  `data_cadastro` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FULLTEXT KEY `ix_nome` (`nome`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+
+-- 
+-- Dumping data for table `contato`
+-- 
+
+INSERT INTO `contato` (`id`, `nome`, `empresa`, `telefone_pessoal`, `telefone_comercial`, `emails`, `data_cadastro`) VALUES 
+(1, 'Issac Newton', 'Empresa 002', '(71) 1232-11233', '(71)3335-6556', 'teste@hotmail.com', NULL),
+(9, 'Carlos Almerindo 003', 'Almerindo Ltda 00003', '(71)321123', '(99)9999-9999', 'aaa@bbbb.com.br', '2017-06-18 10:31:46'),
+(4, 'Axel Rose', 'Guns and Roses', '71 3211-33214', '', 'testes@hotmail.com', '2017-06-19 12:18:38'),
+(5, 'Albert Einstein', 'Nuclear Systems SA', '71 3211-1122', '71 3325-2214', 'teste@hotmail.com, Vou fazer um novo teste e ver o que vai dar., rafaelrend@gmail.com, teste@art.com.br, novo_email@google.com.br', '2017-06-19 14:01:21'),
+(6, 'Ricardo Meneguel', 'Meneguel Produções Ltda', '71 3211-1122', '71 3325-2214', 'ventriloco@gmail.com, oba@yahoo.com.br, Fernandinho@uahooo.com.br', '2017-06-19 12:10:43'),
+(7, 'Teste', 'Testes', '7112321123', '(71)3335-6556', 'email@email.com.br, novoemailee777@hotmail.com, voudigitarumnovoemail@hotmail.com', '2017-06-18 09:19:47'),
+(10, 'Teste 003', 'Empresa 003', '', '', 'testes@hotmail.com, novoemail@email.com.br', '2017-06-18 19:52:29'),
+(11, 'Billy Idol', 'Eyes without a face', '', '', 'billy@msn.com.br, billyidol@yahoo.com', '2017-06-19 12:09:19'),
+(12, 'Ricardinho Mangusto', '', '', '', '', '2017-06-19 12:11:06'),
+(13, 'Hermes', 'Hermes e Renato', '', '', '', '2017-06-19 12:11:19'),
+(14, 'Felipe Massa', '', '', '', 'massa@ferrari.com.br, massa02@ferrari.com.br', '2017-06-19 12:15:09'),
+(16, 'Clodoaldo', 'Ceará esporte clube', '', '', '', '2017-06-19 14:09:36');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `contato_email`
+-- 
+
+CREATE TABLE `contato_email` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id_contato` int(11) DEFAULT NULL,
+  `email` varchar(300) DEFAULT NULL,
+  `ordem_cadastro` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ix_contato` (`id_contato`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
+
+-- 
+-- Dumping data for table `contato_email`
+-- 
+
+INSERT INTO `contato_email` (`id`, `id_contato`, `email`, `ordem_cadastro`) VALUES 
+(1, 3, 'testes@hotmail.com', 1),
+(2, 4, 'testes@hotmail.com', 1),
+(3, 5, 'rafaelrend@gmail.com', 0),
+(4, 5, 'teste@hotmail.com', 1),
+(7, 6, 'oba@yahoo.com.br', 2),
+(9, 5, 'Vou fazer um novo teste e ver o que vai dar.', 2),
+(10, 5, 'teste@art.com.br', 3),
+(11, 7, 'email@email.com.br', 1),
+(13, 7, 'voudigitarumnovoemail@hotmail.com', 3),
+(16, 7, 'novoemailee777@hotmail.com', 2),
+(17, 3, 'novoemail@email.com.br', 2),
+(18, 9, 'aaa@bbbb.com.br', 0),
+(19, 1, 'teste@hotmail.com', 1),
+(20, 10, 'testes@hotmail.com', 1),
+(21, 10, 'novoemail@email.com.br', 2),
+(22, 11, 'billy@msn.com.br', 1),
+(23, 6, 'ventriloco@gmail.com', 1),
+(24, 6, 'Fernandinho@uahooo.com.br', 3),
+(25, 5, 'novo_email@google.com.br', 4),
+(26, 11, 'billyidol@yahoo.com', 2),
+(27, 5, 'testesultimoemail@ggmail.com', 5),
+(28, 14, 'massa@ferrari.com.br', 0),
+(29, 14, 'massa02@ferrari.com.br', 1);

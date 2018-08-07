@@ -1,0 +1,218 @@
+/* CSS Document */
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+}
+
+.menu_superior{
+     background: url(thin-blue.png) repeat-x #7A9BBD; height: 18px; border: solid 1px #BCCCDE;
+	 font-weight: bold;
+	 text-transform: uppercase;
+	 text-align: left;
+	 padding-left: 7px;
+	 
+}
+
+
+.menu_superior a{ 
+
+    color: #1A3E47;
+   text-decoration: none;
+}
+
+
+.menu_superior2{
+      border: solid 1px #BCCCDE;
+	 font-weight: bold;
+	 text-transform: uppercase;
+	 text-align: left;
+	 padding-left: 7px;
+	 
+}
+.menu_superior2 a{ 
+
+    color: #1A3E47;
+   text-decoration: none;
+}
+
+.div_nome_login{
+   color: #996600;
+   font-weight: bold;
+}
+
+img{
+   border:none;
+}
+
+.menu_sub{
+      border: solid 1px #BCCCDE;
+	  padding-left: 21px;
+	  height: 15px;
+	  text-align: left;
+	  
+}
+
+.current_icone_topo{
+    
+   background: #F0F0F0;
+}
+
+.menu_sub:hover{
+   background: #F0F0F0;
+}
+
+.menu_sub a{
+
+   text-transform: none;
+   text-decoration: none;
+   color: #3D2503;
+}
+
+.menu_sub a:hover{
+
+   text-decoration: underline;
+}
+/* tabela */
+
+.trheader th{
+
+     background: url(thin-blue.png) repeat-x #7A9BBD; 
+	 border-top: solid 1px #BCCCDE;
+}
+
+.trheader2 th{
+
+     background: #D1DCE0; 
+	 border-top: solid 1px #BCCCDE;
+}
+.f-tabela-texto-alt2{
+    background: #EBEBEB;
+    background-image: none;
+}
+.f-tabela-texto2{
+    background: #FCFCFC;
+    background-image: none;
+}
+
+
+.div_secao{
+
+     background: url(thin-blue.png) repeat-x #7A9BBD; 
+	 border-top: solid 1px #BCCCDE;
+}
+.botao{
+     background: url(back_botao.png) repeat-x;
+border: solid 1px #999999;
+font-weight: bold;
+
+}
+input[type=text],input[type=password], textarea {
+     font-size: 11px;
+     background: url(back_input.png) repeat-x #DFDFDF;
+	 border: solid 1px #999999;
+}
+select {
+     font-size: 11px;
+     background: url(back_input.png) repeat-x #DFDFDF;
+	 border: solid 1px #999999;
+}
+
+.divMsgObrigatorio{
+   color: red;
+   float: left;
+   padding-left: 20px;
+}
+.campoObrigatorio{
+   color: red;
+
+}
+.f-tabela-texto-alt td{
+   border: solid 1px #DCE4EE;
+   background: url(back_td.png) repeat-x #DEE6EE;
+}
+.f-tabela-texto td{
+   border: solid 1px #DCE4EE;
+}
+.fieldBox{
+     margin-top: 15px;
+	 margin-left: 15px;
+}
+.tbcadastro{
+
+   border: solid 1px #DCE4EE;
+}
+
+.tbcadastro tr td{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.tbcadastro tr td label{
+    font-weight: bold;
+	color: #334B64;
+}
+.interMenu{
+   margin-top: 20px;
+   margin-left: 25px;
+}
+.mostrapk{
+   color: #9D3300;
+   font-weight: bold;
+}
+
+.td_numero input{
+      text-align: right;
+	  
+}
+
+.td_numero{
+      text-align: right;
+	  
+}
+
+.f-tabela-paginacao{
+
+
+     background: url(thin-blue.png) repeat-x #7A9BBD; 
+	 border-top: solid 1px #BCCCDE;
+}
+
+.div_titulo_pagina{
+
+   height: 25px;
+   text-align: right;
+   text-transform: uppercase;
+   background: url(thin-titulo.png) repeat-x;
+   padding-right: 20px;
+   font-size: 14px;
+   padding-top: 5px;
+   font-weight: bold;
+   color: #666666;
+}
+
+.dvMensagem{
+   color: #CC6600;
+   background: #F4F4F4;
+    font-weight: bold;
+	font-size: 16px;
+	text-align:center;
+	width: 85%;
+   
+}
+.sp_txtfiltro{
+   font-weight: bold;
+}
+
+.t-title{
+    
+    color: #273F47;
+	font-size: 13px;
+    font-weight: bold;
+    
+}
+
+.t-bold{
+    
+	font-size: 13px;
+}

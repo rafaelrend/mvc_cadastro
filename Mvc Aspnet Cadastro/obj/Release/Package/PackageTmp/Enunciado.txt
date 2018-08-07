@@ -1,0 +1,25 @@
+﻿ENUNCIADO do teste:
+ 
+Projeto: Gerenciamento de contatos.
+ 
+Tarefa base:
+Implementar cadastro (inserção, alteração e exclusão) de contatos com opção de consulta e listagem.
+A consulta e listagem devem considerar todos os dados como filtro.
+ 
+Interface usuário:
+Campos de interação com o usuário:
+Nome;
+Empresa;
+Email (possibilitando cadastrar vários. Sem limite de quantidade);
+Telefone pessoal;
+Telefone comercial.
+Campos obrigatórios:
+Nome.
+Pré-requisitos:
+C#
+JavaScript
+Banco de dados de livre escolha (não precisando ser relacional e pode salvar em memória também)
+                                                                                                                         
+Diferenciais a serem aplicados no desenvolvimento (caso tenha conhecimento):
+ASP.NET MVC, C# e Dar preferência ao Ajax.
+Não precisa ser preocupar com designer;

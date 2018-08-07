@@ -1,0 +1,82 @@
+  
+    
+    body{
+            font-family: 'Open Sans', sans-serif;
+    }
+    .f-tabela-texto td{
+        font-size: 13px;
+    }
+    .f-tabela-texto-alt td{
+        font-size: 13px;
+    }
+    
+    h2{
+        color: #628196;
+    }
+    
+    .trheader2 th{
+        background-color: #82A8C2;
+    }
+    
+    .td_numero{
+        text-align: right;
+    }
+    
+    .pendencia .vazio .b{
+        color: red;
+    }
+    .pendencia .grupo{
+        font-weight: bold;
+        color: black;
+        padding-left: 10px;
+    }
+    
+    .pendencia .index{
+        padding-left: 10px;
+    }
+    
+    .pendencia .campo{
+        
+        font-weight: normal;
+        border: solid 1px #CCCCCC;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .pendencia .pendencia_item{
+        
+        padding-left:25px;
+        font-weight: normal;
+    }
+    
+    .pendencia .sub_pendencia{
+        color: #8942f4;
+        border: solid 1px #CCCCCC;
+    }
+    
+    .pendencia .sub_pendencia_item{
+        
+        padding-left:20px;
+    }
+    
+    .pendencia .itens{
+        
+    }
+    
+    
+    .pendencia .grupo h4{
+          color: #324dba;
+          font-size: 16px;
+    }
+    
+     .pendencia h5{
+        color: #2d469b;
+        font-size: 16px;
+        
+    }
+    
+    .sub_mensagem{
+        
+        color: #47494c;
+        font-size: 80%;
+    }

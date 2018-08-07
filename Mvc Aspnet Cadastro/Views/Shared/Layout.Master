@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<meta name="viewport" content="width=device-width" />
+<title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+
+         <link rel="stylesheet" href="<%: Url.Content("~/Assets") %>/javascript/jquery/style/jquery.ui.css" type="text/css" media="screen" />
+         <link rel="stylesheet" href="<%: Url.Content("~/Assets") %>/javascript/jquery/style/jquery.ui.ext.css" type="text/css" media="screen" />
+
+        <link rel="stylesheet" href="<%: Url.Content("~/Assets") %>/bootstrap/css/bootstrap.min.css" />
+
+	    <link type="text/css" href="<%: Url.Content("~/Assets") %>/javascript/jquery/jquery-ui-1.9.2.custom/css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet"
+	    media="stylesheet" />		
+	
+      <link rel="stylesheet" href="<%: Url.Content("~/Assets") %>/images/modal.css?t=10" type="text/css" media="screen" />
+      <link rel="stylesheet" href="<%: Url.Content("~/Assets") %>/css/estilo.css?t=344" type="text/css" />	
+      <link rel="stylesheet" href="<%: Url.Content("~/Assets") %>/css/final.css?t=358" type="text/css" />	
+      <script type="text/javascript" src="<%: Url.Content("~/Assets") %>/javascript/jquery/1.12.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="<%: Url.Content("~/Assets") %>/javascript/jquery/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="<%: Url.Content("~/Assets") %>/javascript/jquery/jquery.click-calendario-1.0.js"></script>
+    <script type="text/javascript" src="<%: Url.Content("~/Assets") %>/javascript/jquery/query.datepick-pt-BR.js"></script>
+	<script type="text/javascript" src="<%: Url.Content("~/Assets") %>/javascript/validacampos.js"></script>
+    <script type="text/javascript"  src="<%: Url.Content("~/Assets") %>/bootstrap/js/bootstrap.min.js"></script>
+
+    
+    <script type="text/javascript"  src="<%: Url.Content("~/Assets") %>/javascript/paginator.js"></script>
+
+</head>
+<body>
+    <div id="wrap" >
+    <% Html.RenderPartial("Topo"); %>
+
+        <div id="content-wrap"   >	
+  
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        </div>
+</body>
+</html>
+<%
+    if (ViewData["oConn"] != null)
+    {
+        DataAccess.IDbPersist oConn =   (DataAccess.IDbPersist)ViewData["oConn"];
+        oConn.disconnect(); //Close connection  after show all page
+       // Response.Write("close");
+    }
+ %>

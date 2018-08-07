@@ -1,0 +1,109 @@
+/**
+ * JQuery Slider Plugin
+ */
+
+.sliderbar {
+	display: block; 
+	float: left;
+	position: relative;
+	width: 100%; 
+	height: 15px; 
+	margin: 0px; 
+	padding: 0px; 
+	top: 0px;
+	left: 40px;
+	border: solid 0px blue;
+
+}
+.bar {
+	display: block; 
+	overflow: hidden;
+	float: left; 
+  position: relative;
+  top: 0px;
+  left: 0px;
+	margin: 0px; 
+	padding: 0px;  
+	width: 210px; 
+	height: 100%;  
+	border: solid 1px black;
+	
+}
+.leftbar {
+	display: block; 
+	float: left; 
+	margin: 0px; 
+	padding: 0px; 
+	width: 100px; 
+	background: blue; 
+	height: 100%;
+
+}
+.cursor  {
+	display: block; 
+	float: left; 
+	margin-top: -1px; 
+	margin-left: -2px; 
+	margin-bottom:0px; 
+	margin-right: 0px; 
+	padding: 0px auto;  
+	width: 10px; 
+	background: gray; 
+	border: solid 1px orange;
+	cursor: col-resize;
+	height: 100%;
+}
+.rightbar {
+	display: block; 
+	float: left; 
+	margin: 0px; 
+	padding: 0px;  
+	width: 100px; 
+	background: red; 
+	height: 100%;
+	background: red; 
+}
+.percent {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	margin-left: 0px;
+	height: 17px;
+	font-size: .8em;
+	float: left;
+	
+}
+
+#minus {
+	display: none;
+}
+.lt {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	margin-right: 5px;
+	margin-left: 0px;
+	height: 17px;
+	float: left;
+	text-decoration: none;
+} 
+#plus {
+	display: none;
+}
+.gt {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	margin-right: 5px;
+	margin-left: 5px;
+	height: 17px;
+	float: left;
+}
+a.lt {
+  text-decoration: none;
+  color: gray;
+}
+a.gt {
+  text-decoration: none;
+  color: gray;
+}

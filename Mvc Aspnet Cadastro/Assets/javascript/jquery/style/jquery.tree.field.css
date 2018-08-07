@@ -1,0 +1,24 @@
+/* Tree com Fieldbox
+----------------------------------*/
+div#treeAll{
+	display: table;
+}
+div#treeFolders{
+	width:35%;
+	float: left;
+}
+div#treeForm{
+	margin-left: 35%;
+}
+div#treeConect{
+	z-index:999;
+	margin-top:70px;
+	margin-left:195px;
+	padding-top:30px;
+	border-top:solid 1px #CCC;
+	border-bottom:solid 1px #CCC;
+	background-image:none;
+	width: 61px;
+	position: absolute;
+	clear:right; 
+}
